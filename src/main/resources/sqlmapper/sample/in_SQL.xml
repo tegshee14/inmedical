@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="inmedical.sample.impl.inMapper">
+
+	<select id="selectall"  resultType="java.util.HashMap" parameterType="java.util.HashMap">
+		select *,#{HAHA} as asdh
+		  from test
+	</select>
+	
+	<insert id="insert" parameterType="java.util.HashMap">
+	   INSERT INTO output
+(
+date,
+time,
+jog_u,
+amt,
+cont,
+jan_ag,
+point,
+seq
+)
+VALUES
+(
+'2323'
+,'2323'
+,'2323'
+,'2323'
+,'232'
+,'23334'
+,'5555'
+,'2323222222222222222222222222222222222222222222222222222222222'
+)
+	</insert>
+	<insert id="insert2" parameterType="java.util.HashMap">
+	   insert test
+	    (idtestt) values (#{hoho})
+	</insert>
+
+</mapper>
