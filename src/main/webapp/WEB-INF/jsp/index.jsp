@@ -11,7 +11,7 @@
 	#btnControl {
     display: none;
 }
-
+ㅇㅇㅁㅈㅇㅁ{}
 #btnControl:checked + label > div {
     width: 70px;
     height: 74px;
