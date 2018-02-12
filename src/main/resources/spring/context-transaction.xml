@@ -14,7 +14,7 @@
 
 
     <aop:config >
-        <aop:pointcut id="txAdvisePointCut" expression="execution(* inmedical.*.impl.*Impl..*(..))"/>
+        <aop:pointcut id="txAdvisePointCut" expression="execution(* inmedical..impl.*Impl..*(..))"/>
         <aop:advisor  advice-ref="txAdvice" pointcut-ref="txAdvisePointCut" />
     </aop:config>
     
