@@ -50,6 +50,8 @@
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
+            console.log(window.innerWidth);
+            console.log(window.outerWidth);
             var currentIndex = 0,
                 outIndex = 0,
                 $in = null,
@@ -66,6 +68,7 @@
                 $pageList = $(".page");
                 documentWidth = $(".www").outerWidth();
                 documentHeight = $(".www").outerHeight();               
+                alert(documentWidth);
             }
             function initPage() {               
                 $pageList.eq(currentIndex).addClass("current-page");                
