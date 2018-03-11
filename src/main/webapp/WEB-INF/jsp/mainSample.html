@@ -5,185 +5,228 @@
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
 <style type="text/css">
-body {
-	font-family: "맑음 코딕";
-	background: #eee;
+<style type="text/css">
+body{
+    font-family: "맑음 코딕";
 }
-
 header {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	height: 75px;
-	background: #fff;
+    padding-top: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
-header:after {
-	content: '';
-	clear: both;
-	display: block;
-}
 
 .header {
-	width: 1024px;
-	margin: 0 auto;
-	position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 90px;
 }
 
 .logoImg {
-	width: 266px;
-	height: 70px;
-	background: url("resources/img/in.gif") no-repeat 0 0;
-	position: absolute;
-	top: 0px;
+    width: 266px;
+    height: 70px;
+    background: url("resources/img/in.gif") no-repeat 0 0;
+    
+    position: absolute;
+    top:0px;
 }
 
 form {
-	position: absolute;
-	top: 16px;
-	left: 360px;
+    position: absolute;
+    top: 16px;
+    left: 360px;
 }
 
 form>ul>li {
-	float: left;
-	list-style: none;
+    float: left;
+    list-style: none;
 }
 
 .subbmt {
-	background: #359ab9;
-	color: #fff;
-	padding: 0px 15px;
-	border: 1px solid #52c2e4;
-	position: relative;
-	height: 42px;
+    background: #359ab9;
+    color: #fff;
+    padding: 0px 15px;
+    border: 1px solid #52c2e4;
+    position: relative;
+        height: 42px;
 }
 
-.search {
-	padding: 20px 0px 20px 10px;
-	border: 1px solid #eee;
-	width: 300px;
+.search{
+    padding: 20px 0px 20px 10px;
+    border: 1px solid #eee;
+    width: 300px;
 }
 
 .form {
-	position: absolute;
-	top: 32px;
-	right: 0px;
+    position: absolute;
+    top: 32px;
+    right: 0px;
 }
 
 .form>ul>li {
-	list-style: none;
-	float: left;
-	padding: 0 27px;
-	font-size: 12px;
-	position: relative;
-	border-right: 1px solid #eee;
-	color: #8a8686;
-	cursor: pointer;
+    list-style: none;
+    float: left;
+    padding: 0 27px;
+    font-size: 12px;
+    position: relative;
+    border-right: 1px solid #eee;
+    color: #8a8686;
+    cursor: pointer;
 }
 
 nav {
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fafafa;
+    
 }
 
 nav>ul {
-	width: 1024px;
-	margin: 0 auto;
+       width: 1024px;
+    margin: 0 auto;
+    
+        color: #000;
+        font-weight: bold;
 }
 
 nav>ul>li {
-	float: left;
-	border-right: 1px solid #eee;
-	border-left: 1px solid #eee;
-	padding: 15px 0px;
-	margin-left: -1px;
-	color: #0463a8;
-	width: 135px;
-	text-align: center;
+    float: left;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 15px 0px;
+    
+    margin-left: -1px;
+
+    width: 135px;
+    text-align: center;
 }
 
 nav>ul>li:first-child {
-	width: 207px;
+    width: 207px;
 }
 
 nav>ul>li:hover {
-	background: #eee;
+    background: #eee;
 }
 
 .after:after {
-	content: '';
-	clear: both;
-	display: block;
+    content: '';
+    clear: both;
+    display: block;
 }
 
+
 .menu-trigger, .menu-trigger span {
-	display: inline-block;
-	transition: all .3s;
-	box-sizing: border-box;
+    display: inline-block;
+    transition: all .3s;
+    box-sizing: border-box;
 }
 
 .menu-trigger {
-	position: relative;
-	width: 20px;
-	height: 13px;
+    position: relative;
+    width: 20px;
+    height: 13px;
 }
 
 .menu-trigger span {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background-color: #000;
-	border-radius: 5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
 }
 
 .menu-trigger span:nth-of-type(1) {
-	top: 0;
+    top: 0;
 }
 
 .menu-trigger span:nth-of-type(2) {
-	top: 5px;
+    top: 5px;
 }
 
 .menu-trigger span:nth-of-type(3) {
-	bottom: 0;
+    bottom: 0;
+}
+
+
+
+
+
+.slide{
+    position: relative;
+    width: 1024px;
+    margin: 20px auto 0 auto;
+    background: #fff;
+}
+
+.slide > h1 {
+    text-align: center;
+    padding: 10px 0;
+    
+}
+.slideCont > ul  {
+    list-style: none;
+}
+.slideCont > ul > li {
 }
 </style>
 </head>
 <body>
-	<header>
-		<div class="header">
-			<div class="logoImg"></div>
-			<form action="ww.jsp">
-				<ul class="after">
-					<li><input type="search" placeholder="검색" class="search" /></li>
-					<li><input type="submit" value="검색" class="subbmt" /></li>
-				</ul>
-			</form>
-			<div class="form">
-				<ul class="after">
-					<li>로그인</li>
-					<li>장바구니</li>
-					<li>고객센터</li>
-				</ul>
-			</div>
-
-		</div>
-	</header>
-	<nav>
-		<ul class="after">
-			<li>
-				<div class="menu-trigger">
-					<span></span> <span></span> <span></span>
-				</div> 전체 상품
-			</li>
-			<li>베스트 상품</li>
-			<li>할인 상품</li>
-			<li>총안 상품</li>
-			<li>수입 상품</li>
-			<li>공지사항 상품</li>
-			<li>견적문의 상품</li>
-		</ul>
-	</nav>
-
+    <header>
+        <div class="header ">
+            <div class="logoImg"></div>
+            <form action="ww.jsp">
+                <ul class="after">
+                    <li><input type="search" placeholder="검색" class="search"/></li>
+                    <li><input type="submit" value="검색" class="subbmt"/></li>
+                </ul>
+            </form>
+            <div class="form">
+                <ul class="after">
+                    <li>로그인</li>
+                    <li>장바구니</li>
+                    <li>고객센터</li>
+                </ul>
+            </div>
+            
+        </div>
+    <nav>
+        <ul class="after">
+            <li>
+            <div class="menu-trigger">
+                        <span></span> <span></span> <span></span>
+                    </div>
+            전체 상품</li>
+            <li>베스트 상품</li>
+            <li>할인 상품</li>
+            <li>총안 상품</li>
+            <li>수입 상품</li>
+            <li>공지사항 상품</li>
+            <li>견적문의 상품</li>
+        </ul>
+    </nav>
+    </header>
+   <div class="slide">
+    <h1>아이엔메디칼 신상품</h1>
+    <div class="slideCont">
+       <ul>
+           <li>
+               <a> <img alt="" src="resources/img/0000000000122.jpg"  width="100px"/> 
+                   <span>상품 명</span>
+                   </a>
+           </li>
+       </ul>
+    </div>
+   </div>
+    
+    <!--  
+<form action="fileUpload" id="fileUpload" name="fileUpload" method="post" enctype="multipart/form-data" > 
+       이름 : <input type="text" name="name" id="cmd" value="namevla"><br> 
+       파일 : <input type="file" name="file"><br> 
+       <input type="file" name="file"><br> 
+       <input type="submit" name="업로드" value="제출"><br> 
+</form>
+-->
 </body>
+</html>
