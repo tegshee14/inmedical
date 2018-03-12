@@ -1,0 +1,163 @@
+@CHARSET "EUC-KR";
+
+header {
+    padding-top: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+.header {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 80px;
+}
+
+.logoImg {
+    width: 266px;
+    height: 70px;
+    background: url("/resources/img/in.gif") no-repeat 0 0;
+    
+    position: absolute;
+    top:0px;
+}
+
+form {
+    position: absolute;
+    top: 16px;
+    left: 360px;
+}
+
+form>ul>li {
+    float: left;
+    list-style: none;
+}
+
+.subbmt {
+    background: #359ab9;
+    color: #fff;
+    padding: 0px 15px;
+    border: 1px solid #359ab9;
+    position: relative;
+        height: 42px;
+}
+
+.search{
+    border: 1px solid #359ab9;
+    width: 300px;
+    padding: 5px 15px;
+    height: 42px;
+}
+
+.form {
+    position: absolute;
+    top: 32px;
+    right: 0px;
+}
+
+.form>ul>li {
+    list-style: none;
+    float: left;
+    padding: 0 27px;
+    font-size: 12px;
+    position: relative;
+    border-right: 1px solid #eee;
+    color: #8a8686;
+    cursor: pointer;
+}
+
+nav {
+    border-top: 1px solid #dad8d8;
+    border-bottom: 1px solid #dad8d8;
+    background: #fafafa;
+    
+}
+
+nav>ul  {
+    width: 1024px;
+    margin: 0 auto;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    }
+
+nav>ul>li {
+    float: left;
+    border-right: 1px solid #dad8d8;
+    border-left: 1px solid #dad8d8;
+    padding: 15px 0px;
+    margin-left: -1px;
+    width: 135px;
+    text-align: center;
+}
+
+nav>ul>li:first-child {
+    width: 207px;
+}
+
+nav>ul>li:hover {
+    background: #eee;
+}
+
+.after:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+.menu-trigger, .menu-trigger span {
+    display: inline-block;
+    transition: all .3s;
+    box-sizing: border-box;
+}
+
+.menu-trigger {
+    position: relative;
+    width: 20px;
+    height: 13px;
+    top:1px;
+}
+
+.menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 5px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+
+
+
+
+.slide{
+    position: relative;
+    width: 1024px;
+    margin: 20px auto 0 auto;
+    background: #fff;
+}
+
+.slide > h1 {
+    text-align: center;
+    padding: 10px 0;
+    
+}
+.slideCont > ul  {
+    list-style: none;
+}
+.slideCont > ul > li {
+}
